@@ -7,11 +7,81 @@
     <title>Assignment Three</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3664601a01.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>hello world</h1>
-    <p class="text-red-800">hello world</p>
+
+<style>
+    .line{
+        border: 1px solid black;
+    }
+
+    .loto {
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+
+
+<!-- body -->
+
+<body class="loto">
+    <!-- header -->
+    <header class="container mx-auto ">
+        <!-- nav -->
+        <nav class="navbar lg:text-white lg:bg-[#F85559] rounded-[600px] w-11/12 mx-auto mt-8 mb-14 lg:px-9">
+            <div class="navbar-start text-lg font-medium space-x-6 hidden lg:flex  ">
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Shop</p>
+                <p>All Fruits</p>
+            </div>
+            <div class="lg:navbar-center navbar-start  flex lg:justify-center ">
+                <ul class="menu menu-horizontal px-1 flex items-center  space-x-3">
+                    <img src="./images/logo.png" alt="" class="w-10">
+                    <h1 class="lg:text-4xl text-xl font-bold">Fruit Burst</h1>
+                </ul>
+            </div>
+            <div class="navbar-end  ">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <i class="fa fa-xl fa-solid fa-bars"></i>
+                    </label>
+                    <div tabindex="0"
+                        class="menu menu-sm dropdown-content relative -ml-[320px] mt-8 z-[1] w-96  rounded-[600px] flex flex-row justify-center space-y-3">
+                        <div class="flex items-center text-lg font-medium space-x-6 border border-red-400 rounded-3xl py-4 px-3">
+                            <p>Home</p>
+                            <p>About Us</p>
+                            <p>Shop</p>
+                            <p>All Fruits</p>
+                        </div>
+                        <div class="border border-red-400 rounded-3xl"><label for="fname"></label>
+                            <input type="text" id="fname" name="fname" placeholder="Search here"
+                                class="  rounded-[600px] h-10 w-64 px-7 ">
+                            <div class=" ml-56 -mt-8 absolute text-black   "><i
+                                    class="fa fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:flex items-center hidden  ">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="fname" placeholder="Search here"
+                        class="  rounded-[600px] h-10 w-64 px-7 ">
+                    <div class=" ml-56 absolute text-black   "><i class="fa fa-solid fa-magnifying-glass"></i></div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+    </main>
+    <!-- footer -->
+    <footer>
+    </footer>
 </body>
 
 </html>
